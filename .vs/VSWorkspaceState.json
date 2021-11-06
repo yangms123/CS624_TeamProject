@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\app_server",
+    "\\app_server\\controllers",
+    "\\app_server\\models",
+    "\\app_server\\routes",
+    "\\app_server\\views",
+    "\\public",
+    "\\public\\images",
+    "\\public\\stylesheets"
+  ],
+  "SelectedNode": "\\public\\stylesheets\\bootstrap.min.css",
+  "PreviewInSolutionExplorer": false
+}
