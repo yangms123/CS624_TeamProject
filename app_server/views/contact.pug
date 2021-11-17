@@ -1,0 +1,30 @@
+extends layout
+block content
+    head
+    title contact
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description' content='')
+    meta(name='author' content='')
+    link(rel='stylesheet' href='css/bootstrap/bootstrap.min.css')
+    link(rel='icon' href='favicon.ico')
+    div 
+        h3 CUSTOMER SERVICE: (555)-123-4567
+        h3 Monday – Friday 8:00 am – 5:00 pm (PST)
+        .container.overflow-hidden
+            .row.gx-5
+                .col
+                .p-3 
+                .col
+                .p-3 
+    div   
+        h3 EMAIL: support@Fetch.com
+        h4 or use the form below
+    div
+        .mb-3
+        form.form-inline
+            label(class='col-sm-2 col-form-label col-form-label-lg') Contact us 
+            input.form-control.mb-2.mr-sm-2(type='text' placeholder='Name')
+            input.form-control.mb-2.mr-sm-2(type='email' placeholder='Email')
+            textarea#Message.form-control(name='Message' rows='3' placeholder='Message')
+            button.btn.btn-primary.mb-2(type='submit') Send

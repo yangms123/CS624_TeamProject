@@ -1,40 +1,55 @@
+style(type='text/css').
+  .h-divider{
+  margin-top:5px;
+  margin-bottom:5px;
+  height:1px;
+  width:100%;
+  border-top:1px blue;
+  }
 doctype html
 html
   head
-    <!--  4. Set the viewport metadata for better display on mobile devices-->
-    meta(name='viewport', content = 'width=device-width, initial-scale=1.0')
-
-    title= title
-    <!--  1.Include BootStrap and Front Awesome CSS -->
-    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
-    link(rel='stylesheet', href='/stylesheets/all.min.css')
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    title Fetch
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    meta(name="description", content="")
+    meta(name="author", content="")
+    link(rel="stylesheet", href="stylesheets/bootstrap.min.css")
+    link(rel="icon", href="favicon.ico")
   body
-    
-    nav.navbar.fixed-top.navbar-expand-md.navbar-light                    
-        .container
-          a.navbar-brand(href='/')
-            img(src = '/images/Fetchlogo.PNG' class = 'img-responsive' alt='LOGO' style='width:20%')
-          #navbarMain.navbar-collapse.collapse
-              ul.navbar-nav.mr-auto
-                li.nav-item
-                  a.nav-link(href='/about/') About
-                li.nav-item
-                  a.nav-link(href='/about/') shop by pet
-                li.nav-item
-                  a.nav-link(href='/about/') shop by brand  
-                li.nav-item
-                  a.nav-link(href='/about/') Sale     
+    div(class="")
+      div
+        nav.navbar.navbar-expand-lg.navbar-light.py-4
+          div.container-fluid
+            a.navbar-brand(href='')
+              img.img-fluid(src='/images/Fetchlogo.PNG' alt='' width='160px')
+            button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#nav03' aria-controls='nav03' aria-expanded='false' aria-label='Toggle navigation')
+              span.navbar-toggler-icon
+            #nav03.collapse.navbar-collapse
+              ul.navbar-nav.mt-3.mt-lg-0.mb-3.mb-lg-0.ms-lg-3.me-auto
+                li.nav-item.me-4
+                  a.nav-link(href='/') HOME
+                li.nav-item.me-4
+                  a.nav-link(href='/aboutUs') About Us
+                li.nav-item.me-4
+                  a.nav-link(href='/contact') Contact
+              div
+                a.btn.btn-outline-secondary.me-2(href='#')  Sign In
+                a.btn.btn-primary(href='#')  Sign Up
+      img.img-fluid(src='/images/BlueLine.png' alt='' width='100%' )
 
+      
   .container.content
     //- img(src = '/images/test.PNG' class = 'img-responsive' alt='test' ) 
     block content
-    footer 
+    footer
+        img.img-fluid(src='/images/BlueLine.png' alt='' width='100%' ) 
         .row 
         .col-12
             small &copy; CS624 FULL Stack Project: Mingsheng Twila Dare
     <!--  3. Bring in jQuery and Popper, needed by Bootstrap. -->
-    script(src='http://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo',crossorigin-'anonymous')
-    script(src="https://cdnjs.cloudflare.con/ajax/lib/popper.js/1.14.3/umd/popper.min.js",integrity='sha384ZMP7rVo3mlykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/I8WvCWPIPm49',crossorigin='anonymous') 
-    <!-- 2. Bring in the BootStra JaveScript file -->
-    script(src='/javascripts/bootstap.min.js')
+    //- script(src='http://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo',crossorigin-'anonymous')
+    //- script(src="https://cdnjs.cloudflare.con/ajax/lib/popper.js/1.14.3/umd/popper.min.js",integrity='sha384ZMP7rVo3mlykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/I8WvCWPIPm49',crossorigin='anonymous') 
+    //- <!-- 2. Bring in the BootStra JaveScript file -->
+    //- script(src='/javascripts/bootstap.min.js')
+    script(src="javascripts/bootstrap.bundle.min.js")
