@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-let dbURI = 'mongodb://localhost/Fetch';
+let dbURI = process.env.MONGODB_URI;
 if (process.env.NODE_ENV === 'production') {
     dbURI = process.env.MONGODB_URI;
   }
@@ -15,4 +15,3 @@ mongoose.connection.on('disconnected',()=>{
     console.log('Mongoose disconnected')
 });
 
-// require('./locations');

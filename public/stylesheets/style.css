@@ -9,8 +9,8 @@ legend {
 }
 
 .navbar {
-  background-color: #ffffff;
-  border-color: #ffffff;
+  background-color: #0e0d0d;
+  border-color: #ce2626;
 }
 
 .navbar-light .navbar-brand {
@@ -34,12 +34,12 @@ legend {
 }
 
 .card {
-  background-color: #f7f8f8;
+  background-color: #34d3d3;
   padding: 1rem;
 }
 
 .card-primary {
-  border-color: #d6edf0;
+  border-color: #1aabbe;
   margin-bottom: 0.5rem;
 }
 
@@ -105,5 +105,5 @@ a:hover {
 body {
   font-family: "Cabin", Arial, sans-serif;
   color: rgb(39, 9, 172);
-  background-color: #ffffff;
+  background-color: #44e7e7;
 }
