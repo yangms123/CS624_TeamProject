@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-let dbURI = 'mongodb+srv://mingsheng:Yang123..@cs624mingsheng.2sdhf.mongodb.net/arcane-waters-82213?retryWrites=true&w=majority';
+let dbURI = process.env.MONGODB_URI;
 if (process.env.NODE_ENV === 'production') {
     dbURI = process.env.MONGODB_URI;
   }
